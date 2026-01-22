@@ -213,3 +213,32 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* ===== Instagram Reference ===== */
+.insta-follow {
+  width: 100%;
+  text-align: center;
+  margin: 12px 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.insta-follow span {
+  color: #000080;
+  margin-right: 6px;
+}
+
+.insta-follow a {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: #ffffff;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.insta-follow a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
