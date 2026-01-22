@@ -242,3 +242,75 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
+
+/* ===== Stylish Table Card ===== */
+.table-card {
+  max-width: 420px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+/* Table */
+.state-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Header */
+.state-table thead th {
+  background: linear-gradient(to right, #138808, #2ecc71);
+  color: #ffffff;
+  padding: 16px 10px;
+  font-size: 18px;
+}
+
+.state-table thead span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 0.95;
+  margin-top: 4px;
+}
+
+/* Rows */
+.state-table tbody tr {
+  transition: background 0.3s, transform 0.2s;
+}
+
+.state-table tbody tr:nth-child(even) {
+  background: #f6fff6;
+}
+
+.state-table tbody tr:hover {
+  background: #eaffea;
+  transform: scale(1.02);
+}
+
+/* Cells */
+.state-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 500;
+  color: #065f1f;
+}
+
+/* Last row border fix */
+.state-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Mobile Friendly */
+@media (max-width: 500px) {
+  .state-table {
+    font-size: 15px;
+  }
+
+  .state-table thead th {
+    font-size: 16px;
+  }
+}
