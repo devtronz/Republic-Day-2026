@@ -314,3 +314,55 @@ footer {
     font-size: 16px;
   }
 }
+
+/* ===== Auto Scroll Card ===== */
+.scroll-title {
+  background: linear-gradient(to right, #138808, #2ecc71);
+  color: #fff;
+  text-align: center;
+  padding: 14px 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.scroll-title span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 4px;
+}
+
+/* Scroll Box */
+.scroll-box {
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+}
+
+/* Scroll List */
+.scroll-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  animation: vertical-scroll 20s linear infinite;
+}
+
+.scroll-list li {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 500;
+  color: #065f1f;
+}
+
+/* Pause on hover */
+.scroll-box:hover .scroll-list {
+  animation-play-state: paused;
+}
+
+/* Animation */
+@keyframes vertical-scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
