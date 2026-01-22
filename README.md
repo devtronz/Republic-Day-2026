@@ -30,4 +30,7 @@ A beautifully designed informational website showcasing the **participating Stat
 ---
 
 ## 📁 Project Structure
-
+   📦 republic-day-2026
+┣ 📜 index.html
+┣ 🎨 style.css
+┗ 📄 README.md
